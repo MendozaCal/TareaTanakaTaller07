@@ -15,12 +15,20 @@ namespace TareaTanaka07
             switch (opt)
             {
                 case 1: Console.WriteLine("Ingresa el valor de la base");
-                        float bas = int.Parse(Console.ReadLine());
+                        float basR = int.Parse(Console.ReadLine());
                         Console.WriteLine("Ingresa el valor de la altura");
-                        float alt = int.Parse(Console.ReadLine());
-                        Rectángulo r = new Rectángulo(bas,alt);
-                    Console.WriteLine($"El área del rectángulo es {r.CalcularArea()}");
-                break;
+                        float altR = int.Parse(Console.ReadLine());
+                        Rectángulo r = new Rectángulo(basR,altR);
+                        Console.WriteLine($"El área del rectángulo es {r.CalcularArea()}");
+                    break;
+
+                case 2: Console.WriteLine("Ingresa el valor de la base");
+                        float basT = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Ingresa el valor de la altura");
+                        float altT = int.Parse(Console.ReadLine());
+                        Triángulo t = new Triángulo(basT,altT);
+                        Console.WriteLine($"El área del triángulo es {t.CalcularArea()}");
+                    break;
             }
         }
     }
